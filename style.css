@@ -20,7 +20,7 @@ ul {
 
 .container {
     display: grid;
-    grid-template: 150px 1fr / 1fr 5fr;
+    grid-template: 150px 1fr / 250px 5fr;
     height: 100vh;
 }
 
@@ -37,7 +37,16 @@ ul {
 }
 
 .sidebar ul {
+    font-size: 1.2rem;
     display: contents;
+}
+
+.sidebar li {
+    margin-left: 8px;
+}
+
+.sidebar .mdi {
+    margin-right: 10px;
 }
 
 .sidebar li:nth-last-of-type(4) {
@@ -45,7 +54,13 @@ ul {
 }
 
 .sidebar h1 {
-    margin-bottom: 1.5em;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.sidebar h1 .mdi {
+    font-size: 2.5rem;
+    vertical-align: middle;
 }
 
 .main-header {
