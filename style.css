@@ -68,7 +68,7 @@ ul {
 /* MAIN HEADEER */
 
 .main-header {
-    box-shadow: 0 0px 15px 0px #000a;
+    box-shadow: 0 0px 10px 0px #0003;
     clip-path: inset(-30px 0);
     padding: 0 30px;
     display: grid;
@@ -151,5 +151,50 @@ ul {
 }
 
 .main-body {
-    background-color: red;
+    background-color: #e2e8f0;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 3fr 1fr;
+    padding: 30px 100px;
+}
+
+.main-title {
+    margin-bottom: 12px;
+}
+
+.projects {
+    display: grid;
+    gap: 30px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+}
+
+.card {
+    display: grid;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    border-left: 10px solid #f0b429;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.card-body {
+    margin-bottom: 20px;
+    color: #636363;
+}
+
+.card-icons {
+    font-size: 1.3rem;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: max-content max-content max-content;
+    justify-self: end;
+}
+
+.card-icons * {
+    cursor: pointer;
 }
