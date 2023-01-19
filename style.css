@@ -230,3 +230,27 @@ ul {
 .trending-item p:last-child {
     color: #636363;
 }
+
+.trending {
+    padding: 20px;
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.trending-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.trending-item :first-child {
+    font-size: 2rem;
+    grid-row: span 2;
+}
+
+.trending-item :last-child {
+    grid-column: 2;
+}
