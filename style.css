@@ -98,6 +98,40 @@ ul {
 
 .notification-section {
     justify-self: end;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: max-content max-content 1fr;
+    align-items: center;
+}
+
+.notification-section .mdi-account-circle {
+    font-size: 2rem;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-overview {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: max-content 1fr;
+    justify-self: start;
+    align-items: center;
+}
+
+.profile-overview .mdi {
+    font-size: 3rem;
+    grid-row: span 2;
+}
+
+.profile-desc {
+    font-size: 0.7rem;
+    align-self: flex-end;
+}
+
+.profile-overview .profile-name {
+    grid-column: 2;
 }
 
 .main-body {
